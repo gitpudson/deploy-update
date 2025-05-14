@@ -16,9 +16,9 @@ function App() {
       <div className="app-content">
         <Sidebar/>
         <Routes>
-          <Route path='/add' element={<AddGoogleSheet/>}/>
-          <Route path='/list' element={<ListGoogleSheet/>}/>
-          <Route path='/orders' element={<Orders/>}/>
+          <Route path='/deploy-update/add' element={<AddGoogleSheet/>}/>
+          <Route path='/deploy-update/list' element={<ListGoogleSheet/>}/>
+          <Route path='/deploy-update/orders' element={<Orders/>}/>
         </Routes>
       </div>
     </div>
