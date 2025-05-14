@@ -11,6 +11,7 @@ import {
 import { Box } from "@mui/system";
 import React, { forwardRef } from "react";
 import './ConfirmBox.css'
+import { assets } from '../../assets/assets';
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Fade ref={ref} {...props} />;
@@ -21,7 +22,8 @@ const ConfirmBox = ({open, closeDialog, title ,deleteFunction,status}) => {
     const STATUS_IDLE = 0;
 
     const getButtonStatusText = () =>{      
-      return (status === STATUS_IDLE) ?'Delete' : <img src="./load.svg" alt="" />
+    //   return (status === STATUS_IDLE) ?'Delete' : <img src="./load.svg" alt="" />
+      return (status === STATUS_IDLE) ?'Delete' : <img src={assets.loading_image} alt="" />
     }
 
   return (

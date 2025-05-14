@@ -22,7 +22,8 @@ const UpdatePopup = ({setShowUpdate,updateData,updateFunction,status}) => {
     })
 
     const getButtonStatusText = () =>{      
-      return (status === STATUS_IDLE) ?'Update' : <img src="./load.svg" alt="" />
+    //   return (status === STATUS_IDLE) ?'Update' : <img src="./load.svg" alt="" />
+      return (status === STATUS_IDLE) ?'Update' : <img src={assets.loading_image} alt="" />
     }
 
     const onChangeHandler = (event) => {
